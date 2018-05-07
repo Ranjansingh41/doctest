@@ -1,0 +1,11 @@
+jobs:
+ - name: test
+   type: runSh
+   steps:
+     - TASK:
+         runtime:
+           options:
+             imageName: "drydock/u16"
+             imageTag: v5.6.1
+         script:
+                 - ansible --version
